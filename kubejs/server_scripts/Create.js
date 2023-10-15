@@ -96,53 +96,10 @@ onEvent('recipes', event => {
 		['create:incomplete_large_cogwheel',
 			'create:shaft']
 	)
-	//燃烧室
-	event.recipes.create.mechanical_crafting('steampowered:bronze_burner', [
-		'BBB',
-		'B B',
-		'MMM'
-	], {
-		B: '#forge:plates/bronze',
-		M: 'tconstruct:mud_bricks'
-	})
-		.id('steampowered:bronze_burner')
-	event.recipes.create.mechanical_crafting('steampowered:cast_iron_burner', [
-		'CCC',
-		'C C',
-		'SSS'
-	], {
-		C: 'steampowered:cast_iron_sheet',
-		S: '#tconstruct:seared_blocks'
-	})
-		.id('steampowered:cast_iron_burner')
-	event.recipes.create.mechanical_crafting('steampowered:steel_burner', [
-		'SSS',
-		'S S',
-		'BBB'
-	], {
-		S: '#forge:plates/steel',
-		B: '#tconstruct:scorched_blocks'
-	})
-		.id('steampowered:steel_burner')
-
-	//光辉线圈
-
-	//暗影钢+光辉板
-	event.recipes.create.mechanical_crafting('2x ctza:radiant_coil',
-		[
-			'SRS'
-		], {
-		S: 'create:shadow_steel',
-		R: 'ctza:radiant_sheet'
-	})
-
-	//光辉板x2
-	event.recipes.create.mechanical_crafting('ctza:radiant_coil',
-		[
-			'RR'
-		], {
-		R: 'ctza:radiant_sheet'
-	})
+	//光辉板
+	event.recipes.createPressing('ctza:radiant_sheet', [
+		'create:refined_radiance'
+	])
 	//流体管道
 	event.shaped('16x create:fluid_pipe', [
 		'iIi'
@@ -156,11 +113,102 @@ onEvent('recipes', event => {
 	event.recipes.createFilling('create:blaze_cake',
 		['create:blaze_cake_base',
 			Fluid.of('tconstruct:blazing_blood', 500)])
-
 		.id('create:filling/blaze_cake')
 
 	//橡胶
 	event.recipes.createCompacting('thermal:rubber', [
 		Fluid.of('thermal:resin', 250)
 	])
+	//光辉线圈
+
+	//暗影钢+光辉板
+	event.recipes.create.mechanical_crafting('2x ctza:radiant_coil',
+		[
+			'SRS'
+		], {
+		S: 'create:shadow_steel',
+		R: 'ctza:radiant_sheet'
+	})
+	//光辉板x1
+	event.recipes.create.mechanical_crafting('ctza:radiant_coil',
+		[
+			'R'
+		], {
+		R: 'ctza:radiant_sheet'
+	})
+	//燃烧室
+	event.recipes.create.mechanical_crafting('3x steampowered:bronze_burner', [
+		'BBBBB',
+		'BILIB',
+		'BLbLB',
+		'MILIM',
+		'MMcMM'
+	], {
+		B: '#forge:plates/bronze',
+		M: 'tconstruct:mud_bricks',
+		L: 'ctza:lava_mechanism',
+		b: 'steampowered:bronze_boiler',
+		I: '#forge:ingots/bronze',
+		c: 'ctza:burner_core'
+	})
+		.id('steampowered:bronze_burner')
+	event.recipes.create.mechanical_crafting('3x steampowered:cast_iron_burner', [
+		'CCCCC',
+		'CILIC',
+		'CLbLC',
+		'SILIS',
+		'SScSS'
+	], {
+		C: 'steampowered:cast_iron_sheet',
+		S: '#tconstruct:seared_blocks',
+		b: 'steampowered:cast_iron_boiler',
+		L: 'ctza:lava_mechanism',
+		I: '#steampowered:ingots/cast_iron',
+		c: 'ctza:burner_core'
+	})
+		.id('steampowered:cast_iron_burner')
+	event.recipes.create.mechanical_crafting('3x steampowered:steel_burner', [
+		'SSSSS',
+		'SILIS',
+		'SLbLS',
+		'SILIS',
+		'BBcBB'
+	], {
+		S: '#forge:plates/steel',
+		B: '#tconstruct:scorched_blocks',
+		L: 'ctza:lava_mechanism',
+		I: '#steampowered:ingots/steel',
+		b: 'steampowered:steel_boiler',
+		c: 'ctza:burner_core'
+	})
+		.id('steampowered:steel_burner')
+
+	//锅炉
+	event.shaped('steampowered:bronze_boiler',[
+		'BBB',
+		'BGB',
+		'BBB'
+	],{
+		B: '#forge:plates/bronze',
+		G: 'create:fluid_pipe'
+	})
+	.id('steampowered:bronze_boiler')
+	event.shaped('steampowered:cast_iron_boiler',[
+		'BBB',
+		'BGB',
+		'BBB'
+	],{
+		B: 'steampowered:cast_iron_sheet',
+		G: 'create:fluid_pipe'
+	})
+	.id('steampowered:cast_iron_boiler')
+	event.shaped('steampowered:steel_boiler',[
+		'BBB',
+		'BGB',
+		'BBB'
+	],{
+		B: '#forge:plates/steel',
+		G: 'create:fluid_pipe'
+	})
+	.id('steampowered:steel_boiler')
 })

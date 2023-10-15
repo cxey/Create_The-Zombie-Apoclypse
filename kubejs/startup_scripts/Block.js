@@ -8,4 +8,12 @@ onEvent('block.registry', event => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('forge:needs_netherite_tool')
 		.requiresTool(true)
+	//铸铁块
+	event.create('ctza:cast_iron_block')
+		.hardness(3)
+		.resistance(3)
+		.material('metal')
+		.tagBlock('minecraft:mineable/pickaxe')
+		.tagBlock('forge:needs_iron_tool')
+		.requiresTool(true)
 })

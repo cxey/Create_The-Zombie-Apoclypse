@@ -17,4 +17,10 @@ onEvent('item.registry', event => {
 	event.create('ctza:saw')
 	//螺丝刀
 	event.create('ctza:screwdriver')
+	//熔岩构件
+	event.create('ctza:lava_mechanism')
+	//熔岩构件(半成品)
+	event.create('ctza:incomplete_lava_mechanism')
+	//燃烧室核心
+	event.create('ctza:burner_core')
 })

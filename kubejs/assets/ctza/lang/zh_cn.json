@@ -9,5 +9,9 @@
 	"item.ctza.chromatic_resonator": "异彩共振器",
 	"item.ctza.screwdriver": "螺丝刀",
 	"item.ctza.saw": "锯子",
-	"block.ctza.fortified_obsidian": "强化黑曜石"
+	"item.ctza.burner_core": "燃烧室核心",
+	"item.ctza.lava_mechanism": "熔岩构件",
+	"item.ctza.incomplete_lava_mechanism": "熔岩构件(半成品)",
+	"block.ctza.fortified_obsidian": "强化黑曜石",
+	"block.ctza.cast_iron_block": "铸铁块"
 }

@@ -30,8 +30,8 @@
 				"modifier": 0
 			},
 			"copyRecipeIdentifierKeybind": {
-				"keyCode": "key.mouse.middle",
-				"modifier": 0
+				"keyCode": "key.keyboard.p",
+				"modifier": 2
 			},
 			"favoriteKeybind": {
 				"keyCode": "key.keyboard.a",
