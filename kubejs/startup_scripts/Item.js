@@ -1,0 +1,20 @@
+onEvent('item.registry', event => {
+	//弹壳
+	event.create('ctza:shell_case')
+	//亚原子锭
+	event.create('ctza:subatomic_ingot')
+	//光辉板
+	event.create('ctza:radiant_sheet')
+		.glow(true)
+	//光辉线圈
+	event.create('ctza:radiant_coil')
+		.glow(true)
+	//永恒之石
+	event.create('ctza:eternal_stone')
+	//异彩共振器
+	event.create('ctza:chromatic_resonator')
+	//锯子
+	event.create('ctza:saw')
+	//螺丝刀
+	event.create('ctza:screwdriver')
+})
