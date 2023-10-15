@@ -1,5 +1,5 @@
 onEvent('recipes', event => {
-	//小齿轮
+	//小齿轮(半成品)
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": {
@@ -15,7 +15,7 @@ onEvent('recipes', event => {
 	})
 	event.remove({ id: 'tconstruct:smeltery/casting/metal/bronze/gear_gold_cast' })
 
-	//大齿轮
+	//大齿轮(半成品)
 	event.custom({
 		"type": "tconstruct:casting_table",
 		"cast": {
