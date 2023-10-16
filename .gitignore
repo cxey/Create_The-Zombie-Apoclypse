@@ -2,8 +2,7 @@ saves
 resourcepacks
 PCL
 logs
-crash-reports
-
+cras
 defaultconfigs
 schematics
 options.txt
@@ -24,3 +23,10 @@ Create_The-Zombie-Apoclypse.json
 local
 Create_The Zombie Apoclypse-natives
 Create_The-Zombie-Apoclypse-natives
+crash-reports/crash-2023-10-13_08.21.04-client.txt
+crash-reports/crash-2023-10-13_10.58.26-fml.txt
+crash-reports/crash-2023-10-13_16.02.07-client.txt
+crash-reports/crash-2023-10-14_22.05.55-client.txt
+crash-reports/crash-2023-10-14_22.15.06-fml.txt
+crash-reports/crash-2023-10-15_22.57.40-client.txt
+crash-reports/crash-2023-10-16_00.20.20-client.txt
