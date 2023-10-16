@@ -12,6 +12,8 @@
 	"item.ctza.burner_core": "燃烧室核心",
 	"item.ctza.lava_mechanism": "熔岩构件",
 	"item.ctza.incomplete_lava_mechanism": "熔岩构件(半成品)",
+	"item.ctza.polished_apatite": "磨制磷灰石",
+	"item.ctza.polished_cinnabar": "磨制朱砂",
 	"block.ctza.fortified_obsidian": "强化黑曜石",
 	"block.ctza.cast_iron_block": "铸铁块"
 }

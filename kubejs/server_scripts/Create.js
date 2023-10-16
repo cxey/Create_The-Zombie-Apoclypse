@@ -147,7 +147,7 @@ onEvent('recipes', event => {
 		B: '#forge:plates/bronze',
 		M: 'tconstruct:mud_bricks',
 		L: 'ctza:lava_mechanism',
-		b: 'steampowered:bronze_boiler',
+		b: '#forge:storage_blocks/bronze',
 		I: '#forge:ingots/bronze',
 		c: 'ctza:burner_core'
 	})
@@ -161,7 +161,7 @@ onEvent('recipes', event => {
 	], {
 		C: 'steampowered:cast_iron_sheet',
 		S: '#tconstruct:seared_blocks',
-		b: 'steampowered:cast_iron_boiler',
+		b: 'ctza:cast_iron_block',
 		L: 'ctza:lava_mechanism',
 		I: '#steampowered:ingots/cast_iron',
 		c: 'ctza:burner_core'
@@ -178,7 +178,7 @@ onEvent('recipes', event => {
 		B: '#tconstruct:scorched_blocks',
 		L: 'ctza:lava_mechanism',
 		I: '#steampowered:ingots/steel',
-		b: 'steampowered:steel_boiler',
+		b: '#forge:storage_blocks/steel',
 		c: 'ctza:burner_core'
 	})
 		.id('steampowered:steel_burner')

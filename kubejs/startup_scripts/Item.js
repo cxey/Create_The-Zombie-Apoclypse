@@ -11,16 +11,14 @@ onEvent('item.registry', event => {
 		.glow(true)
 	//永恒之石
 	event.create('ctza:eternal_stone')
-	//异彩共振器
-	event.create('ctza:chromatic_resonator')
-	//锯子
-	event.create('ctza:saw')
-	//螺丝刀
-	event.create('ctza:screwdriver')
 	//熔岩构件
 	event.create('ctza:lava_mechanism')
 	//熔岩构件(半成品)
 	event.create('ctza:incomplete_lava_mechanism')
 	//燃烧室核心
 	event.create('ctza:burner_core')
+	//磨制朱砂
+	event.create('ctza:polished_cinnabar')
+	//磨制磷灰石
+	event.create('ctza:polished_apatite')
 })

@@ -1,0 +1,262 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 10/16/23 12:35 PM
+Description: Rendering screen
+
+java.lang.ArrayIndexOutOfBoundsException: -1
+	at it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap.rehash(Int2ObjectOpenHashMap.java:1063) ~[fastutil-8.2.1.jar:?] {re:classloading}
+	at it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap.insert(Int2ObjectOpenHashMap.java:272) ~[fastutil-8.2.1.jar:?] {re:classloading}
+	at it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap.computeIfAbsent(Int2ObjectOpenHashMap.java:480) ~[fastutil-8.2.1.jar:?] {re:classloading}
+	at net.minecraft.client.gui.fonts.Font.func_238557_a_(SourceFile:102) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.client.gui.FontRenderer.func_238404_a_(SourceFile:50) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.CharacterManager.func_238359_a_(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238344_a_(SourceFile:17) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238340_a_(SourceFile:120) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238339_a_(SourceFile:84) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238337_a(SourceFile:128) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.ITextComponent.func_230534_b_(SourceFile:112) ~[?:?] {re:computing_frames,pl:epic_rei_lmao:A,re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.ITextComponent.func_230439_a_(SourceFile:79) ~[?:?] {re:computing_frames,pl:epic_rei_lmao:A,re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.TranslationTextComponent.func_230534_b_(TranslationTextComponent.java:131) ~[?:?] {re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.ITextComponent.func_230439_a_(SourceFile:79) ~[?:?] {re:computing_frames,pl:epic_rei_lmao:A,re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.TextProcessing.func_238343_a_(SourceFile:128) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.CharacterManager.func_238356_a_(SourceFile:47) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraft.client.gui.FontRenderer.func_238414_a_(SourceFile:329) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraftforge.fml.client.gui.GuiUtils.drawHoveringText(GuiUtils.java:458) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraftforge.fml.client.gui.GuiUtils.drawHoveringText(GuiUtils.java:422) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraftforge.fml.client.gui.GuiUtils.drawHoveringText(GuiUtils.java:397) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.client.gui.screen.Screen.renderWrappedToolTip(Screen.java:134) ~[?:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:gamemenumodoption.mixins.json:ScreenMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.Screen.func_243308_b(Screen.java:131) ~[?:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:gamemenumodoption.mixins.json:ScreenMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.Screen.func_238652_a_(Screen.java:127) ~[?:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:gamemenumodoption.mixins.json:ScreenMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.inventory.CreativeScreen.func_238809_a_(CreativeScreen.java:769) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:jecharacters:jecharacters-gen44,xf:fml:jecharacters:jecharacters-gen45,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.inventory.CreativeScreen.func_230430_a_(CreativeScreen.java:617) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:jecharacters:jecharacters-gen44,xf:fml:jecharacters:jecharacters-gen45,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:363) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:356) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.client.renderer.GameRenderer.func_195458_a(GameRenderer.java:492) ~[?:?] {re:mixin,pl:accesstransformer:B,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_195542_b(Minecraft.java:977) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:mixin:APP:rubidium.mixins.json:features.gui.fast_fps_pie.MixinMinecraftClient,pl:mixin:APP:rubidium.mixins.json:features.options.MixinMinecraftClient,pl:mixin:APP:tac.mixins.json:client.MinecraftStaticMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.world_leaks.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.concurrency.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:feature.measure_time.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.dedicated_reload_executor.MinecraftMixin,pl:mixin:APP:modernfix-forge.mixins.json:feature.measure_time.MinecraftMixin_Forge,pl:mixin:APP:modernfix-forge.mixins.json:perf.skip_first_datapack_reload.MinecraftMixin,pl:mixin:APP:chat_heads.mixins.json:MinecraftMixin,pl:mixin:APP:konkrete.mixin.json:client.MixinMinecraft,pl:mixin:APP:entity_texture_features-common.mixins.json:cacheReloaders.MixinMinecraftClient,pl:mixin:APP:flywheel.mixins.json:ShaderCloseMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:performant.mixins.json:MinecraftMixin,pl:mixin:APP:create.mixins.json:WindowResizeMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:607) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:mixin:APP:rubidium.mixins.json:features.gui.fast_fps_pie.MixinMinecraftClient,pl:mixin:APP:rubidium.mixins.json:features.options.MixinMinecraftClient,pl:mixin:APP:tac.mixins.json:client.MinecraftStaticMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.world_leaks.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.concurrency.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:feature.measure_time.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.dedicated_reload_executor.MinecraftMixin,pl:mixin:APP:modernfix-forge.mixins.json:feature.measure_time.MinecraftMixin_Forge,pl:mixin:APP:modernfix-forge.mixins.json:perf.skip_first_datapack_reload.MinecraftMixin,pl:mixin:APP:chat_heads.mixins.json:MinecraftMixin,pl:mixin:APP:konkrete.mixin.json:client.MixinMinecraft,pl:mixin:APP:entity_texture_features-common.mixins.json:cacheReloaders.MixinMinecraftClient,pl:mixin:APP:flywheel.mixins.json:ShaderCloseMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:performant.mixins.json:MinecraftMixin,pl:mixin:APP:create.mixins.json:WindowResizeMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[Create_The-Zombie-Apoclypse.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_281] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:37) ~[forge-1.16.5-36.2.39.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_281] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:60) [JavaWrapper.jar:?] {}
+	at oolloo.jlw.Wrapper.main(Wrapper.java:53) [JavaWrapper.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap.rehash(Int2ObjectOpenHashMap.java:1063) ~[fastutil-8.2.1.jar:?] {re:classloading}
+	at it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap.insert(Int2ObjectOpenHashMap.java:272) ~[fastutil-8.2.1.jar:?] {re:classloading}
+	at it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap.computeIfAbsent(Int2ObjectOpenHashMap.java:480) ~[fastutil-8.2.1.jar:?] {re:classloading}
+	at net.minecraft.client.gui.fonts.Font.func_238557_a_(SourceFile:102) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.client.gui.FontRenderer.func_238404_a_(SourceFile:50) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.CharacterManager.func_238359_a_(SourceFile:48) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238344_a_(SourceFile:17) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238340_a_(SourceFile:120) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238339_a_(SourceFile:84) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.TextProcessing.func_238337_a(SourceFile:128) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.ITextComponent.func_230534_b_(SourceFile:112) ~[?:?] {re:computing_frames,pl:epic_rei_lmao:A,re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.ITextComponent.func_230439_a_(SourceFile:79) ~[?:?] {re:computing_frames,pl:epic_rei_lmao:A,re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.TranslationTextComponent.func_230534_b_(TranslationTextComponent.java:131) ~[?:?] {re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.ITextComponent.func_230439_a_(SourceFile:79) ~[?:?] {re:computing_frames,pl:epic_rei_lmao:A,re:classloading,pl:epic_rei_lmao:A,re:mixin}
+	at net.minecraft.util.text.TextProcessing.func_238343_a_(SourceFile:128) ~[?:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.util.text.CharacterManager.func_238356_a_(SourceFile:47) ~[?:?] {re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraft.client.gui.FontRenderer.func_238414_a_(SourceFile:329) ~[?:?] {re:mixin,pl:accesstransformer:B,re:classloading,pl:accesstransformer:B,pl:epic_rei_lmao:A}
+	at net.minecraftforge.fml.client.gui.GuiUtils.drawHoveringText(GuiUtils.java:458) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraftforge.fml.client.gui.GuiUtils.drawHoveringText(GuiUtils.java:422) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraftforge.fml.client.gui.GuiUtils.drawHoveringText(GuiUtils.java:397) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraft.client.gui.screen.Screen.renderWrappedToolTip(Screen.java:134) ~[?:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:gamemenumodoption.mixins.json:ScreenMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.Screen.func_243308_b(Screen.java:131) ~[?:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:gamemenumodoption.mixins.json:ScreenMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.Screen.func_238652_a_(Screen.java:127) ~[?:?] {re:computing_frames,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A,re:mixin,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:configured:set_background_texture_2,pl:mixin:APP:quark.mixins.json:client.ScreenMixin,pl:mixin:APP:kubejs-common.mixins.json:ScreenMixin,pl:mixin:APP:gamemenumodoption.mixins.json:ScreenMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.inventory.CreativeScreen.func_238809_a_(CreativeScreen.java:769) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:jecharacters:jecharacters-gen44,xf:fml:jecharacters:jecharacters-gen45,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.gui.screen.inventory.CreativeScreen.func_230430_a_(CreativeScreen.java:617) ~[?:?] {re:classloading,pl:accesstransformer:B,xf:fml:jecharacters:jecharacters-gen44,xf:fml:jecharacters:jecharacters-gen45,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreenInternal(ForgeHooksClient.java:363) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+	at net.minecraftforge.client.ForgeHooksClient.drawScreen(ForgeHooksClient.java:356) ~[forge:?] {re:classloading,pl:epic_rei_lmao:A}
+-- Screen render details --
+Details:
+	Screen name: net.minecraft.client.gui.screen.inventory.CreativeScreen
+	Mouse location: Scaled: (227, 201). Absolute: (911.000000, 804.000000)
+	Screen size: Scaled: (460, 263). Absolute: (1839, 1052). Scale factor of 4.000000
+
+-- Affected level --
+Details:
+	All players: 1 total; [ClientPlayerEntity['Qi_Month'/71, l='ClientLevel', x=14.00, y=5.88, z=-55.57]]
+	Chunk stats: Client Chunk Cache: 1024, 289
+	Level dimension: minecraft:overworld
+	Level spawn location: World: (16,4,-48), Chunk: (at 0,0,0 in 1,-3; contains blocks 16,0,-48 to 31,255,-33), Region: (0,-1; contains chunks 0,-32 to 31,-1, blocks 0,0,-512 to 511,255,-1)
+	Level time: 779215 game time, 801179 day time
+	Server brand: forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.world.ClientWorld.func_72914_a(ClientWorld.java:458) ~[?:?] {re:mixin,xf:fml:xaeroworldmap:xaero_wm_clientworldclass,xf:fml:xaerominimap:xaero_clientworldclass,pl:runtimedistcleaner:A,re:classloading,xf:fml:xaeroworldmap:xaero_wm_clientworldclass,xf:fml:xaerominimap:xaero_clientworldclass,pl:mixin:APP:rubidium.mixins.json:features.world_ticking.MixinClientWorld,pl:mixin:APP:rubidium.mixins.json:features.chunk_rendering.MixinClientWorld,pl:mixin:APP:mixins.sndctrl.json:MixinClientWorld,pl:mixin:APP:mixins.oculus.vertexformat.json:block_rendering.MixinClientLevel,pl:mixin:APP:entityculling.mixins.json:ClientWorldMixin,pl:mixin:APP:architectury.mixins.json:MixinClientLevel,pl:mixin:APP:create.mixins.json:BreakProgressMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_71396_d(Minecraft.java:2031) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:mixin:APP:rubidium.mixins.json:features.gui.fast_fps_pie.MixinMinecraftClient,pl:mixin:APP:rubidium.mixins.json:features.options.MixinMinecraftClient,pl:mixin:APP:tac.mixins.json:client.MinecraftStaticMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.world_leaks.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.concurrency.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:feature.measure_time.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.dedicated_reload_executor.MinecraftMixin,pl:mixin:APP:modernfix-forge.mixins.json:feature.measure_time.MinecraftMixin_Forge,pl:mixin:APP:modernfix-forge.mixins.json:perf.skip_first_datapack_reload.MinecraftMixin,pl:mixin:APP:chat_heads.mixins.json:MinecraftMixin,pl:mixin:APP:konkrete.mixin.json:client.MixinMinecraft,pl:mixin:APP:entity_texture_features-common.mixins.json:cacheReloaders.MixinMinecraftClient,pl:mixin:APP:flywheel.mixins.json:ShaderCloseMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:performant.mixins.json:MinecraftMixin,pl:mixin:APP:create.mixins.json:WindowResizeMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.Minecraft.func_99999_d(Minecraft.java:623) ~[?:?] {re:mixin,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:runtimedistcleaner:A,re:classloading,pl:accesstransformer:B,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick,xf:fml:xaeroworldmap:xaero_wm_minecraft_runtick_render_call,xf:fml:customskinloader:MinecraftTransformer,pl:mixin:APP:rubidium.mixins.json:features.gui.fast_fps_pie.MixinMinecraftClient,pl:mixin:APP:rubidium.mixins.json:features.options.MixinMinecraftClient,pl:mixin:APP:tac.mixins.json:client.MinecraftStaticMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.world_leaks.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:bugfix.concurrency.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:feature.measure_time.MinecraftMixin,pl:mixin:APP:modernfix-common.mixins.json:perf.dedicated_reload_executor.MinecraftMixin,pl:mixin:APP:modernfix-forge.mixins.json:feature.measure_time.MinecraftMixin_Forge,pl:mixin:APP:modernfix-forge.mixins.json:perf.skip_first_datapack_reload.MinecraftMixin,pl:mixin:APP:chat_heads.mixins.json:MinecraftMixin,pl:mixin:APP:konkrete.mixin.json:client.MixinMinecraft,pl:mixin:APP:entity_texture_features-common.mixins.json:cacheReloaders.MixinMinecraftClient,pl:mixin:APP:flywheel.mixins.json:ShaderCloseMixin,pl:mixin:APP:mixins.oculus.json:MixinMinecraft_PipelineManagement,pl:mixin:APP:sodium-extra.mixins.json:gui.MinecraftClientAccessor,pl:mixin:APP:architectury.mixins.json:MixinMinecraft,pl:mixin:APP:kubejs-common.mixins.json:MinecraftMixin,pl:mixin:APP:performant.mixins.json:MinecraftMixin,pl:mixin:APP:create.mixins.json:WindowResizeMixin,pl:mixin:A,pl:epic_rei_lmao:A,pl:runtimedistcleaner:A}
+	at net.minecraft.client.main.Main.main(Main.java:184) ~[Create_The-Zombie-Apoclypse.jar:?] {re:classloading,re:mixin,pl:runtimedistcleaner:A,pl:mixin:A,pl:runtimedistcleaner:A}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_281] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:37) ~[forge-1.16.5-36.2.39.jar:36.2] {}
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.1.3.jar:?] {}
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.1.3.jar:?] {re:classloading}
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.1.3.jar:?] {re:classloading}
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_281] {}
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[?:1.8.0_281] {}
+	at oolloo.jlw.Wrapper.invokeMain(Wrapper.java:60) [JavaWrapper.jar:?] {}
+	at oolloo.jlw.Wrapper.main(Wrapper.java:53) [JavaWrapper.jar:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.16.5
+	Minecraft Version ID: 1.16.5
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_281, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 266819960 bytes (254 MB) / 1296039936 bytes (1236 MB) up to 4617928704 bytes (4404 MB)
+	CPUs: 16
+	JVM Flags: 7 total; -XX:+UseG1GC -XX:-UseAdaptiveSizePolicy -XX:-OmitStackTraceInFastThrow -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump -XX:+IgnoreUnrecognizedVMOptions -Xmn256m -Xmx4403m
+	ModLauncher: 8.1.3+8.1.3+main-8.1.x.c94d18ec
+	ModLauncher launch target: fmlclient
+	ModLauncher naming: srg
+	ModLauncher services: 
+		/mixin-0.8.4.jar mixin PLUGINSERVICE 
+		/eventbus-4.0.0.jar eventbus PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar object_holder_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar runtime_enum_extender PLUGINSERVICE 
+		/accesstransformers-3.0.1.jar accesstransformer PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar capability_inject_definalize PLUGINSERVICE 
+		/forge-1.16.5-36.2.39.jar runtimedistcleaner PLUGINSERVICE 
+		/mixin-0.8.4.jar mixin TRANSFORMATIONSERVICE 
+		/forge-1.16.5-36.2.39.jar fml TRANSFORMATIONSERVICE 
+	FML: 36.2
+	Forge: net.minecraftforge:36.2.39
+	FML Language Providers: 
+		javafml@36.2
+		minecraft@1
+	Mod List: 
+		saturn-mc1.16.5-0.0.3.jar                         |Saturn                        |saturn                        |0.0.3               |DONE      |Manifest: NOSIGNATURE
+		[匠魂蓝图] tconplanner-1.16.5-1.2.0.jar               |Tinker's Planner              |tconplanner                   |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		[机械动力：物品附加] create-stuff-additions1.16.5_v1.1.6.ja|Create Stuff Additions        |create_stuff_additions        |1.1.6               |DONE      |Manifest: NOSIGNATURE
+		[犀牛] rhino-forge-1605.1.5-build.75.jar            |Rhino                         |rhino                         |1605.1.5-build.75   |DONE      |Manifest: NOSIGNATURE
+		[工匠再锻] Tinkers Reforged 1.16.5-0.0.6.jar          |Tinkers Reforged              |tinkers_reforged              |0.0.6               |DONE      |Manifest: NOSIGNATURE
+		CustomSkinLoader_ForgeLegacy-14.17.jar            |CustomSkinLoader              |customskinloader              |14.17               |DONE      |Manifest: 4a:31:8b:cf:34:eb:d0:13:f3:19:39:d5:d2:b9:12:78:b5:f2:8d:91:3e:6f:8f:ed:97:48:00:69:e1:30:3a:54
+		[属性修复] AttributeFix-1.16.5-10.1.4.jar             |AttributeFix                  |attributefix                  |10.1.4              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		[伤害显示] torohealth-1.16.4-forge-4.jar              |ToroHealth                    |torohealth                    |NONE                |DONE      |Manifest: NOSIGNATURE
+		[铷] rubidium-mc1.16.5-0.2.13.jar                  |Rubidium                      |rubidium                      |0.2.13              |DONE      |Manifest: NOSIGNATURE
+		[永恒枪械工坊] Tac-0.3.8.1-1.16.5.jar                   |Timeless and Classics Guns    |tac                           |0.3.8.1             |DONE      |Manifest: NOSIGNATURE
+		[配方性能优化] FastSuite-1.16.4-1.1.1.jar               |FastSuite                     |fastsuite                     |1.1.1               |DONE      |Manifest: NOSIGNATURE
+		[键位冲突显示] Controlling-7.0.0.29.jar                 |Controlling                   |controlling                   |7.0.0.29            |DONE      |Manifest: NOSIGNATURE
+		[Xaero的世界地图] XaerosWorldMap_1.34.1_Forge_1.16.5.ja|Xaero's World Map             |xaeroworldmap                 |1.34.1              |DONE      |Manifest: NOSIGNATURE
+		Placebo-1.16.5-4.7.1.jar                          |Placebo                       |placebo                       |4.7.1               |DONE      |Manifest: NOSIGNATURE
+		[现代化修复] modernfix-forge-5.8.1+mc1.16.5.jar        |ModernFix                     |modernfix                     |5.8.1+mc1.16.5      |DONE      |Manifest: NOSIGNATURE
+		[自然罗盘／生物群系指南针] NaturesCompass-1.16.5-1.9.1-forge.j|Nature's Compass              |naturescompass                |1.16.5-1.9.1-forge  |DONE      |Manifest: NOSIGNATURE
+		[配置界面] configured-1.5.4-1.16.5.jar                |Configured                    |configured                    |1.5.4               |DONE      |Manifest: NOSIGNATURE
+		Bookshelf-Forge-1.16.5-10.4.33.jar                |Bookshelf                     |bookshelf                     |10.4.33             |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		[精妙背包] sophisticatedbackpacks-1.16.5-3.15.20.755.j|Sophisticated Backpacks       |sophisticatedbackpacks        |1.16.5-3.15.20.755  |DONE      |Manifest: NOSIGNATURE
+		[DFU载入优化] lazydfu-0.1.3.jar                       |LazyDFU                       |lazydfu                       |0.1.3               |DONE      |Manifest: NOSIGNATURE
+		[飘扬披风] waveycapes-forge-1.3.2-mc1.16.5.jar        |WaveyCapes Mod                |waveycapes                    |1.3.2               |DONE      |Manifest: NOSIGNATURE
+		[搬运] carryon-1.16.5-1.15.6.24.jar                 |Carry On                      |carryon                       |1.15.6.24           |DONE      |Manifest: NOSIGNATURE
+		[聊天头像] chat_heads-0.6.0-forge-1.16.5.jar          |Chat Heads                    |chat_heads                    |0.6.0               |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.39-universal.jar                |Forge                         |forge                         |36.2.39             |DONE      |Manifest: 22:af:21:d8:19:82:7f:93:94:fe:2b:ac:b7:e4:41:57:68:39:87:b1:a7:5c:c6:44:f9:25:74:21:14:f5:0d:90
+		konkrete_forge_1.6.1_MC_1.16.2-1.16.5.jar         |Konkrete                      |konkrete                      |1.6.1               |DONE      |Manifest: NOSIGNATURE
+		[动态环境／动态环绕] DynamicSurroundings-1.16.5-4.0.5.0.jar|§3Dynamic Surroundings        |dsurround                     |4.0.5.0             |DONE      |Manifest: NOSIGNATURE
+		[合成辅助] CraftingTweaks_1.16.5-12.2.1.jar           |Crafting Tweaks               |craftingtweaks                |12.2.1              |DONE      |Manifest: NOSIGNATURE
+		forge-1.16.5-36.2.39-client.jar                   |Minecraft                     |minecraft                     |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		[CoFH核心] cofh_core-1.16.4-1.2.1.jar               |CoFH Core                     |cofh_core                     |1.2.1               |DONE      |Manifest: NOSIGNATURE
+		[热力基本] thermal_foundation-1.16.4-1.2.0.jar        |Thermal Series                |thermal                       |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		[平滑区块保存] smoothchunk1.16.5-2.0.jar                |Smoothchunk mod               |smoothchunk                   |2.0                 |DONE      |Manifest: NOSIGNATURE
+		[匠魂] TConstruct-1.16.5-3.3.4.335.jar              |Tinkers' Construct            |tconstruct                    |3.3.4.335           |DONE      |Manifest: NOSIGNATURE
+		Entity_texture_features_forge_1.16.5-4.3.1.jar    |Entity Texture Features       |entity_texture_features       |4.3.1               |DONE      |Manifest: NOSIGNATURE
+		[附魔描述] EnchantmentDescriptions-1.16.5-7.1.23.jar  |EnchantmentDescriptions       |enchdesc                      |7.1.23              |DONE      |Manifest: eb:c4:b1:67:8b:f9:0c:db:dc:4f:01:b1:8e:61:64:39:4c:10:85:0b:a6:c4:c7:48:f0:fa:95:f2:cb:08:3a:e5
+		[自然音效] AmbientSounds_v3.1.11_mc1.16.5.jar         |Ambient Sounds                |ambientsounds                 |3.0.3               |DONE      |Manifest: NOSIGNATURE
+		[穿草攻击] swingthroughgrass-1.16.4-1.5.3.jar         |SwingThroughGrass             |swingthroughgrass             |1.16.4-1.5.3        |DONE      |Manifest: NOSIGNATURE
+		[鼠标手势] MouseTweaks-2.14-mc1.16.2.jar              |Mouse Tweaks                  |mousetweaks                   |2.14                |DONE      |Manifest: NOSIGNATURE
+		[界面背景模糊] Blur-1.1.0-1.jar                         |Blur                          |blur                          |1.1.0-1             |DONE      |Manifest: NOSIGNATURE
+		[玉 🔍] Jade-1.16.4-2.8.3.jar                      |Jade                          |jade                          |2.8.3               |DONE      |Manifest: NOSIGNATURE
+		[匠魂西洋剑] tinker_rapier-1.1.4-1.16.5.jar            |Tinkers' Rapier               |tinker_rapier                 |1.1.4-1.16.5        |DONE      |Manifest: NOSIGNATURE
+		CreativeCore_v2.2.1_mc1.16.5.jar                  |CreativeCore                  |creativecore                  |2.0.0               |DONE      |Manifest: NOSIGNATURE
+		[盔甲韧性显示] toughnessbar-6.1.jar                     |Toughness Bar                 |toughnessbar                  |6.1                 |DONE      |Manifest: NOSIGNATURE
+		[流畅加载] smoothboot-forge-1.16.4-1.2.2.jar          |Smooth Boot                   |smoothboot                    |1.16.4-1.2.2        |DONE      |Manifest: NOSIGNATURE
+		[REI物品管理器] RoughlyEnoughItems-6.5.436.jar         |Roughly Enough Items (REI)    |roughlyenoughitems            |6.5.436             |DONE      |Manifest: NOSIGNATURE
+		[火花] spark-1.9.1-forge.jar                        |spark                         |spark                         |1.9.1               |DONE      |Manifest: NOSIGNATURE
+		[TexTrue的铷视频界面] TextruesRubidiumOptions-1.0.8-mc1.|TexTrue's Rubidium Options    |reeses_sodium_options         |1.0.8-mc1.16.5      |DONE      |Manifest: NOSIGNATURE
+		RoughlyEnoughItems-jei-internals-workaround-6.5.43|REI Internals Workaround      |rei-internals-workaround      |6.5.436             |DONE      |Manifest: NOSIGNATURE
+		curios-forge-1.16.5-4.0.8.1.jar                   |Curios API                    |curios                        |1.16.5-4.0.8.1      |DONE      |Manifest: NOSIGNATURE
+		[飞轮] flywheel-1.16-0.2.5.jar                      |Flywheel                      |flywheel                      |1.16-0.2.5          |DONE      |Manifest: NOSIGNATURE
+		[机械动力：合金] alloyed-1.16.5-v0.3a.jar                |Create: Alloyed               |alloyed                       |1.16.5              |DONE      |Manifest: NOSIGNATURE
+		[蒸汽动力] Steampowered-1.16.5-1.2.6.jar              |Create: Steam Powered         |steampowered                  |1.16.5-1.2.6        |DONE      |Manifest: NOSIGNATURE
+		[机械动力] create-mc1.16.5_v0.3.2g.jar                |Create                        |create                        |v0.3.2g             |DONE      |Manifest: NOSIGNATURE
+		[地幔] Mantle-1.16.5-1.6.157.jar                    |Mantle                        |mantle                        |1.6.157             |DONE      |Manifest: NOSIGNATURE
+		oculus-mc1.16.5-1.4.6.jar                         |Oculus                        |oculus                        |1.4.6               |DONE      |Manifest: NOSIGNATURE
+		[Xaero的小地图] Xaeros_Minimap_23.8.2_Forge_1.16.5.jar|Xaero's Minimap               |xaerominimap                  |23.8.2              |DONE      |Manifest: NOSIGNATURE
+		collective-1.16.5-5.49.jar                        |Collective                    |collective                    |5.49                |DONE      |Manifest: NOSIGNATURE
+		[铷 · 扩展] rubidium-extra-0.4.18+mc1.16.5-build.75.j|Rubidium Extra                |sodiumextra                   |0.4.18+mc1.16.5-buil|DONE      |Manifest: NOSIGNATURE
+		AutoRegLib-1.6-49.jar                             |AutoRegLib                    |autoreglib                    |1.6-49              |DONE      |Manifest: NOSIGNATURE
+		[夸克] Quark-r2.4-322.jar                           |Quark                         |quark                         |r2.4-322            |DONE      |Manifest: NOSIGNATURE
+		[多态合成] polymorph-forge-1.16.5-0.41.jar            |Polymorph                     |polymorph                     |1.16.5-0.41         |DONE      |Manifest: NOSIGNATURE
+		[加速火把] torcherino-14.0.0+1.16.4.jar               |Torcherino                    |torcherino                    |14.0.0              |DONE      |Manifest: NOSIGNATURE
+		[储物抽屉] StorageDrawers-1.16.3-8.5.2.jar            |Storage Drawers               |storagedrawers                |8.5.2               |DONE      |Manifest: NOSIGNATURE
+		[性能优化] performant-1.16.2-5-4.0m.jar               |Performant                    |performant                    |3.73m               |DONE      |Manifest: NOSIGNATURE
+		[通用拼音搜索] jecharacters-1.16.5-4.4.4.jar            |Just Enough Characters        |jecharacters                  |1.16.5-4.4.4        |DONE      |Manifest: NOSIGNATURE
+		[热力膨胀] thermal_expansion-1.16.4-1.2.0.jar         |Thermal Expansion             |thermal_expansion             |1.2.0               |DONE      |Manifest: NOSIGNATURE
+		[实体渲染机制优化] entityculling-forge-mc1.16.5-1.5.2.jar |EntityCulling                 |entityculling                 |1.5.2               |DONE      |Manifest: NOSIGNATURE
+		[连锁破坏] ftb-ultimine-forge-1605.3.1-build.45.jar   |FTB Ultimine                  |ftbultimine                   |1605.3.1-build.45   |DONE      |Manifest: NOSIGNATURE
+		obfuscate-0.6.3-1.16.5.jar                        |Obfuscate                     |obfuscate                     |0.6.3               |DONE      |Manifest: NOSIGNATURE
+		[匠魂合金附加2] taiga-1.16.5-2.0.0.jar                  |Tinkers Alloying Addon        |taiga                         |1.16.5-2.0.0        |DONE      |Manifest: NOSIGNATURE
+		[熔炉性能优化] FastFurnace-1.16.5-4.5.0.jar             |FastFurnace                   |fastfurnace                   |4.5.0               |DONE      |Manifest: NOSIGNATURE
+		[建筑手杖] constructionwand-1.16.5-2.6.jar            |Construction Wand             |constructionwand              |1.16.5-2.6          |DONE      |Manifest: NOSIGNATURE
+		architectury-1.32.68.jar                          |Architectury                  |architectury                  |1.32.68             |DONE      |Manifest: NOSIGNATURE
+		kubejs-forge-1605.3.19-build.299.jar              |KubeJS                        |kubejs                        |1605.3.19-build.299 |DONE      |Manifest: NOSIGNATURE
+		[FTB库] ftb-library-forge-1605.3.4-build.90.jar    |FTB Library                   |ftblibrary                    |1605.3.4-build.90   |DONE      |Manifest: NOSIGNATURE
+		[物品过滤器] Item-filters-forge-1605.2.5-build.9.jar   |Item Filters                  |itemfilters                   |1605.2.5-build.9    |DONE      |Manifest: NOSIGNATURE
+		[FTB 团队] ftb-teams-forge-1605.2.3-build.40.jar    |FTB Teams                     |ftbteams                      |1605.2.3-build.40   |DONE      |Manifest: NOSIGNATURE
+		[FTB任务] ftb-quests-forge-1605.3.7-build.165.jar   |FTB Quests                    |ftbquests                     |1605.3.7-build.165  |DONE      |Manifest: NOSIGNATURE
+		kubejs-create-1605.1.4-build.12.jar               |KubeJS Create                 |kubejs_create                 |1605.1.4-build.12   |DONE      |Manifest: NOSIGNATURE
+		[苹果皮] appleskin-forge-mc1.16.x-2.5.1.jar          |AppleSkin                     |appleskin                     |2.5.1+mc1.16.4      |DONE      |Manifest: NOSIGNATURE
+		lootr-1.16.5-0.2.18.49.jar                        |Lootr                         |lootr                         |0.1.15.46           |DONE      |Manifest: NOSIGNATURE
+		[铁氧体磁芯] ferritecore-2.1.1-forge.jar               |Ferrite Core                  |ferritecore                   |2.1.1               |DONE      |Manifest: 41:ce:50:66:d1:a0:05:ce:a1:0e:02:85:9b:46:64:e0:bf:2e:cf:60:30:9a:fe:0c:27:e0:63:66:9a:84:ce:8a
+		[存档置顶] cherishedworlds-forge-1.16.5-5.1.1.0.jar   |Cherished Worlds              |cherishedworlds               |1.16.5-5.1.1.0      |DONE      |Manifest: NOSIGNATURE
+		[自定义局域网联机] lanserverproperties-1.4.jar            |Lan Server Properties         |lanserverproperties           |1.4                 |DONE      |Manifest: NOSIGNATURE
+		cloth-config-4.17.101-forge.jar                   |Cloth Config v4 API           |cloth-config                  |4.17.101            |DONE      |Manifest: NOSIGNATURE
+		justzoom_forge_1.0.0_MC_1.16.2-1.16.5.jar         |Just Zoom                     |justzoom                      |1.0.0               |DONE      |Manifest: NOSIGNATURE
+		[盔甲音效调整] ArmorSoundTweak-3.1.2-forge.jar          |Armor Sound Tweak             |armorsoundtweak               |3.1.2               |DONE      |Manifest: 42:2c:5e:4c:e2:f5:d1:07:7f:aa:29:ae:31:88:80:0c:b1:a6:87:6b:6a:2d:0f:67:57:e4:5a:4a:26:73:31:ac
+		[能源炉动画] DynamicDynamos-1.16-2.1.jar               |Dynamic Dynamos               |dynamicdynamos                |2.1                 |DONE      |Manifest: NOSIGNATURE
+		[树叶快速腐烂] FastLeafDecay-v25.2.jar                  |FastLeafDecay                 |fastleafdecay                 |v25.2               |DONE      |Manifest: NOSIGNATURE
+		[时装盔甲重置版] CosmeticArmorReworked-1.16.5-v5.jar     |CosmeticArmorReworked         |cosmeticarmorreworked         |1.16.5-v5           |DONE      |Manifest: 5e:ed:25:99:e4:44:14:c0:dd:89:c1:a9:4c:10:b5:0d:e4:b1:52:50:45:82:13:d8:d0:32:89:67:56:57:01:53
+		[游戏菜单模组设定] GameMenuModOption-1.16.4-1.8.2.jar     |Game Menu Mod Option          |gamemenumodoption             |1.8.2               |DONE      |Manifest: NOSIGNATURE
+		[治愈营火] healingcampfire_1.16.5-3.9.jar             |Healing Campfire              |healingcampfire               |3.9                 |DONE      |Manifest: NOSIGNATURE
+		[机械动力-添加] create-addition-1.16.5-20220129a.jar    |Create Crafts & Additions     |createaddition                |1.16.5-20220129a    |DONE      |Manifest: NOSIGNATURE
+		[脚步声Forge版] presencefootsteps-r29-1.16.4.jar      |Presence Footsteps            |presencefootsteps             |r29-1.16.4          |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: abb89d64-a710-4723-8e09-0f78e284896a
+	Loaded Shaderpack: (off)
+	Launched Version: Create_The-Zombie-Apoclypse
+	Backend library: LWJGL version 3.2.2 build 10
+	Backend API: AMD Radeon(TM) Graphics GL version 4.6.14756 Compatibility Profile Context 20.40.64 27.20.14064.3, ATI Technologies Inc.
+	GL Caps: Using framebuffer using OpenGL 3.0
+	Using VBOs: Yes
+	Is Modded: Definitely; Client brand changed to 'forge'
+	Type: Client (map_client.txt)
+	Graphics mode: fancy
+	Resource Packs: vanilla, mod_resources, quark:emote_resources (incompatible), file/Quark Programmer Art.zip, file/Minecraft-Mod-Language-Modpack-1-16.zip, file/Created--Updated, file/Qi_Month's Resource-Pack, file/Biancqy's Music-Pack
+	Current Language: 简体中文 (中国)
+	CPU: 16x AMD Ryzen 7 5700U with Radeon Graphics 
