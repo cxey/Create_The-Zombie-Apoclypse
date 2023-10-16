@@ -35,3 +35,7 @@ Create_The Zombie Apoclypse-natives
 Create_The-Zombie-Apoclypse-natives
 CreateThe ZombieApoclypse-natives
 CustomSkinLoader
+config/endless-common.toml
+config/oculus.properties
+config/xaerominimap_entities.json
+CustomSkinLoader/CustomSkinLoader.log
