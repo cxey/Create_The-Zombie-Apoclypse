@@ -9,4 +9,8 @@ onEvent('recipes', event => {
 		C: 'ctza:polished_cinnabar',
 		I: '#forge:plates/iron'
 	})
+	//铸铁块
+	event.shapeless('ctza:cast_iron_block',[
+		'9x steampowered:cast_iron_ingot'
+	])
 })
