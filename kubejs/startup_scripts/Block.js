@@ -8,7 +8,6 @@ onEvent('block.registry', event => {
 		.tagBlock('minecraft:mineable/pickaxe')
 		.tagBlock('forge:needs_netherite_tool')
 		.requiresTool(true)
-
 })
 onEvent('block.registry', event => {
 	//铸铁块
