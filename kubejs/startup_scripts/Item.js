@@ -21,4 +21,12 @@ onEvent('item.registry', event => {
 	event.create('ctza:polished_cinnabar')
 	//磨制磷灰石
 	event.create('ctza:polished_apatite')
+	//动力构件
+	event.create('ctza:kinetic_mechanism')
+	//动力构件(半成品)
+	event.create('ctza:incomplete_kinetic_mechanism')
+	//绝缘构件
+	event.create('ctza:insulation_mechanism')
+	//绝缘构件(半成品)
+	event.create('ctza:incomplete_insulation_mechanism')
 })

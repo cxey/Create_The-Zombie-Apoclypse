@@ -1,49 +1,49 @@
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: CustomSkinLoader 14.17
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: DataDir: D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Operating System: Windows 10 (amd64) version 10.0
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Java Version: 1.8.0_281, Oracle Corporation
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Minecraft: 1.16.5
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Config File: D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader\CustomSkinLoader.json
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Try to load config.
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Successfully load config.
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MojangAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: Legacy
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSkinAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSKinAPIPlus
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: UniSkinAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: ElyByAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GlitchlessAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MinecraftCapesAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: WynntilsAPI
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: Successfully update config.
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: version : 14.17
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: buildNumber : 19
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: loadlist : [{ "name": "Mojang", "type": "MojangAPI", "apiRoot": "https://api.mojang.com/", "sessionRoot": "https://sessionserver.mojang.com/" }, { "name": "LittleSkin", "type": "CustomSkinAPI", "root": "https://littleskin.cn/csl/" }, { "name": "BlessingSkin", "type": "CustomSkinAPI", "root": "https://skin.prinzeugen.net/" }, { "name": "ElyBy", "type": "ElyByAPI", "root": "http://skinsystem.ely.by/textures/" }, { "name": "SkinMe", "type": "UniSkinAPI", "root": "http://www.skinme.cc/uniskin/" }, { "name": "TLauncher", "type": "ElyByAPI", "root": "https://auth.tlauncher.org/skin/profile/texture/login/" }, { "name": "GlitchlessGames", "type": "GlitchlessAPI", "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=" }, { "name": "LocalSkin", "type": "Legacy", "checkPNG": "false", "skin": "LocalSkin/skins/{USERNAME}.png", "model": "auto", "cape": "LocalSkin/capes/{USERNAME}.png", "elytra": "LocalSkin/elytras/{USERNAME}.png" }, { "name": "MinecraftCapes", "type": "MinecraftCapesAPI", "root": "https://minecraftcapes.net/profile/" }, { "name": "OptiFine", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://optifine.net/capes/{USERNAME}.png" }, { "name": "Wynntils", "type": "WynntilsAPI", "root": "https://athena.wynntils.com/user/getInfo" }, { "name": "CloakPlus", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "http://161.35.130.99/capes/{USERNAME}.png" }, { "name": "LabyMod", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://dl.labymod.net/capes/{STANDARD_UUID}" }, { "name": "Cosmetica", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://api.cosmetica.cc/get/cloak?username={USERNAME}&uuid={STANDARD_UUID}&nothirdparty" }]
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: enableDynamicSkull : true
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: enableTransparentSkin : true
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: forceIgnoreHttpsCertificate : false
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: forceLoadAllTextures : true
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: enableCape : true
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: threadPoolSize : 8
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: enableLogStdOut : false
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: cacheExpiry : 30
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: forceUpdateSkull : false
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: enableLocalProfileCache : false
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: enableCacheAutoClean : false
-[2023-10-16 13:43:42] [Render thread/INFO] [CustomSkinLoader Core]: forceDisableCache : false
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: Loading Qi_Month's profile.
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'Mojang'.
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: Default profile will be used.
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: 2/14 Try to load profile from 'LittleSkin'.
-[2023-10-16 13:43:42] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Qi_Month.json'.
-[2023-10-16 13:43:42] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 304 , Content Length: -1)
-[2023-10-16 13:43:42] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Cache file found (Length: 181 , Path: 'D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader\caches\5a5fc6a9745bb5a4f025973ef402fa22a4415dda' , Expire: 0)
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: Try to load from cache 'D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader\caches\5a5fc6a9745bb5a4f025973ef402fa22a4415dda'.
-[2023-10-16 13:43:42] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Successfully load from cache
-[2023-10-16 13:43:42] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Content: {"username":"Qi_Month","skins":{"slim":"351b1e87d1214a1ce0dceeaf736373ace7d4d3473632edfecb10879332db0f73"},"cape":"ba275a138d84e962c8441be8fbc3df556e61ebddda014e53fd18cb50841d3c6a"}
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: Qi_Month's profile loaded.
-[2023-10-16 13:43:42] [Qi_Month/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/c5556891a59f0369b984d1126befa5da388945a9df044780fa8bebf4499e5015 , Model: slim , CapeUrl: https://littleskin.cn/csl/textures/ba275a138d84e962c8441be8fbc3df556e61ebddda014e53fd18cb50841d3c6a  , Expiry: 1697435052)
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: CustomSkinLoader 14.17
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: DataDir: D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Operating System: Windows 10 (amd64) version 10.0
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Java Version: 1.8.0_281, Oracle Corporation
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Minecraft: 1.16.5
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Config File: D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader\CustomSkinLoader.json
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Try to load config.
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Successfully load config.
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MojangAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: Legacy
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSkinAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: CustomSKinAPIPlus
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: UniSkinAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: ElyByAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: GlitchlessAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: MinecraftCapesAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Add a profile loader: WynntilsAPI
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: Successfully update config.
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: version : 14.17
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: buildNumber : 19
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: loadlist : [{ "name": "Mojang", "type": "MojangAPI", "apiRoot": "https://api.mojang.com/", "sessionRoot": "https://sessionserver.mojang.com/" }, { "name": "LittleSkin", "type": "CustomSkinAPI", "root": "https://littleskin.cn/csl/" }, { "name": "BlessingSkin", "type": "CustomSkinAPI", "root": "https://skin.prinzeugen.net/" }, { "name": "ElyBy", "type": "ElyByAPI", "root": "http://skinsystem.ely.by/textures/" }, { "name": "SkinMe", "type": "UniSkinAPI", "root": "http://www.skinme.cc/uniskin/" }, { "name": "TLauncher", "type": "ElyByAPI", "root": "https://auth.tlauncher.org/skin/profile/texture/login/" }, { "name": "GlitchlessGames", "type": "GlitchlessAPI", "root": "https://games.glitchless.ru/api/minecraft/users/profiles/textures/?nickname=" }, { "name": "LocalSkin", "type": "Legacy", "checkPNG": "false", "skin": "LocalSkin/skins/{USERNAME}.png", "model": "auto", "cape": "LocalSkin/capes/{USERNAME}.png", "elytra": "LocalSkin/elytras/{USERNAME}.png" }, { "name": "MinecraftCapes", "type": "MinecraftCapesAPI", "root": "https://minecraftcapes.net/profile/" }, { "name": "OptiFine", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://optifine.net/capes/{USERNAME}.png" }, { "name": "Wynntils", "type": "WynntilsAPI", "root": "https://athena.wynntils.com/user/getInfo" }, { "name": "CloakPlus", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "http://161.35.130.99/capes/{USERNAME}.png" }, { "name": "LabyMod", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://dl.labymod.net/capes/{STANDARD_UUID}" }, { "name": "Cosmetica", "type": "Legacy", "checkPNG": "false", "model": "auto", "cape": "https://api.cosmetica.cc/get/cloak?username={USERNAME}&uuid={STANDARD_UUID}&nothirdparty" }]
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: enableDynamicSkull : true
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: enableTransparentSkin : true
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: forceIgnoreHttpsCertificate : false
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: forceLoadAllTextures : true
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: enableCape : true
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: threadPoolSize : 8
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: enableLogStdOut : false
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: cacheExpiry : 30
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: forceUpdateSkull : false
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: enableLocalProfileCache : false
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: enableCacheAutoClean : false
+[2023-10-16 16:47:00] [Render thread/INFO] [CustomSkinLoader Core]: forceDisableCache : false
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: Loading Qi_Month's profile.
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: 1/14 Try to load profile from 'Mojang'.
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: Default profile will be used.
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: 2/14 Try to load profile from 'LittleSkin'.
+[2023-10-16 16:47:00] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Try to request 'https://littleskin.cn/csl/Qi_Month.json'.
+[2023-10-16 16:47:00] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Successfully request (Response Code: 304 , Content Length: -1)
+[2023-10-16 16:47:00] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Cache file found (Length: 181 , Path: 'D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader\caches\5a5fc6a9745bb5a4f025973ef402fa22a4415dda' , Expire: 0)
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: Try to load from cache 'D:\.minecraft\versions\Create_The-Zombie-Apoclypse\CustomSkinLoader\caches\5a5fc6a9745bb5a4f025973ef402fa22a4415dda'.
+[2023-10-16 16:47:00] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Successfully load from cache
+[2023-10-16 16:47:00] [Qi_Month/DEBUG] [CustomSkinLoader Core]: Content: {"username":"Qi_Month","skins":{"slim":"351b1e87d1214a1ce0dceeaf736373ace7d4d3473632edfecb10879332db0f73"},"cape":"ba275a138d84e962c8441be8fbc3df556e61ebddda014e53fd18cb50841d3c6a"}
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: Qi_Month's profile loaded.
+[2023-10-16 16:47:00] [Qi_Month/INFO] [CustomSkinLoader Core]: (SkinUrl: http://textures.minecraft.net/texture/c5556891a59f0369b984d1126befa5da388945a9df044780fa8bebf4499e5015 , Model: slim , CapeUrl: https://littleskin.cn/csl/textures/ba275a138d84e962c8441be8fbc3df556e61ebddda014e53fd18cb50841d3c6a  , Expiry: 1697446050)
 c8441be8fbc3df556e61ebddda014e53fd18cb50841d3c6a"}
 [2023-10-16 03:07:00] [Qi_Month/INFO] [CustomSkinLoader Core]: Qi_Month's profile loaded.
 [2023-10-16 03:07:00] [Qi_Month/INFO] [CustomSkinLoader Core]: (SkinUrl: https://littleskin.cn/csl/textures/351b1e87d1214a1ce0dceeaf736373ace7d4d3473632edfecb10879332db0f73 , Model: slim , CapeUrl: https://littleskin.cn/csl/textures/ba275a138d84e962c8441be8fbc3df556e61ebddda014e53fd18cb50841d3c6a  , Expiry: 1697396850)
