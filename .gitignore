@@ -3,7 +3,7 @@ resourcepacks
 PCL
 logs
 crash-reports
-CreateThe ZombieApoclypse-natives
+
 defaultconfigs
 schematics
 options.txt
@@ -22,3 +22,5 @@ modernfix
 Create_The-Zombie-Apoclypse.jar
 Create_The-Zombie-Apoclypse.json
 local
+Create_The Zombie Apoclypse-natives
+Create_The-Zombie-Apoclypse-natives
