@@ -39,3 +39,6 @@ config/endless-common.toml
 config/oculus.properties
 config/xaerominimap_entities.json
 CustomSkinLoader/CustomSkinLoader.log
+config/oculus.properties
+config/xaerominimap.txt
+config/xaeroworldmap.txt

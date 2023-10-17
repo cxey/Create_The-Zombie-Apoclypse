@@ -9,8 +9,20 @@ onEvent('recipes', event => {
 		C: 'ctza:polished_cinnabar',
 		I: '#forge:plates/iron'
 	})
+	//锯子
+	event.shaped(Item.of('ctza:saw', '{Damage:0}'), [
+		'  I',
+		' I ',
+		'T  '
+	], {
+		I: '#forge:ingots/iron',
+		T: '#forge:rods/wooden'
+	})
 	//铸铁块
-	event.shapeless('ctza:cast_iron_block',[
+	event.shapeless('ctza:cast_iron_block', [
 		'9x steampowered:cast_iron_ingot'
+	])
+	event.shapeless('9x steampowered:cast_iron_ingot', [
+		'ctza:cast_iron_block'
 	])
 })

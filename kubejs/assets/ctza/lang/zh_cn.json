@@ -18,6 +18,11 @@
 	"item.ctza.incomplete_insulation_mechanism": "绝缘构件(半成品)",
 	"item.ctza.polished_apatite": "磨制磷灰石",
 	"item.ctza.polished_cinnabar": "磨制朱砂",
+	"item.ctza.andesit_mechanism": "安山构件",
+	"item.ctza.incomplete_andesit_mechanism": "安山构件(半成品)",
+	"item.ctza.copper_mechanism": "铜构件",
+	"item.ctza.incomplete_copper_mechanism": "铜构件(半成品)",
+	"item.ctza.andesit_sheet": "安山合金板",
 	"block.ctza.fortified_obsidian": "强化黑曜石",
 	"block.ctza.cast_iron_block": "铸铁块"
 }

@@ -15,6 +15,7 @@ onEvent('item.registry', event => {
 	event.create('ctza:lava_mechanism')
 	//熔岩构件(半成品)
 	event.create('ctza:incomplete_lava_mechanism')
+		.type('create:sequenced_assembly')
 	//燃烧室核心
 	event.create('ctza:burner_core')
 	//磨制朱砂
@@ -25,8 +26,22 @@ onEvent('item.registry', event => {
 	event.create('ctza:kinetic_mechanism')
 	//动力构件(半成品)
 	event.create('ctza:incomplete_kinetic_mechanism')
+		.type('create:sequenced_assembly')
 	//绝缘构件
 	event.create('ctza:insulation_mechanism')
 	//绝缘构件(半成品)
 	event.create('ctza:incomplete_insulation_mechanism')
+		.type('create:sequenced_assembly')
+	//安山构件
+	event.create('ctza:andesit_mechanism')
+	//安山构件(半成品)
+	event.create('ctza:incomplete_andesit_mechanism')
+		.type('create:sequenced_assembly')
+	//铜构件
+	event.create('ctza:copper_mechanism')
+	//铜构件(半成品)
+	event.create('ctza:incomplete_copper_mechanism')
+		.type('create:sequenced_assembly')
+	//安山合金板
+	event.create('ctza:andesit_sheet')
 })

@@ -6,6 +6,9 @@ onEvent('recipes', event => {
 	event.remove({ id: 'create:crafting/kinetics/large_cogwheel' })
 	event.remove({ id: 'create:mechanical_crafting/flywheel' })
 	event.remove({ id: 'create:mechanical_crafting/furnace_engine' })
+	event.remove({ id: 'tconstruct:smeltery/melting/soul/glass' })
+	event.remove({ id: 'tconstruct:smeltery/melting/soul/pane' })
+	event.remove({ id: 'tconstruct:smeltery/melting/soul/sand' })
 	//橡胶手部零件
 	event.shaped('create:brass_hand', [
 		' A ',
@@ -184,31 +187,66 @@ onEvent('recipes', event => {
 		.id('steampowered:steel_burner')
 
 	//锅炉
-	event.shaped('steampowered:bronze_boiler',[
+	event.shaped('steampowered:bronze_boiler', [
 		'BBB',
 		'BGB',
 		'BBB'
-	],{
+	], {
 		B: '#forge:plates/bronze',
 		G: 'create:fluid_pipe'
 	})
-	.id('steampowered:bronze_boiler')
-	event.shaped('steampowered:cast_iron_boiler',[
+		.id('steampowered:bronze_boiler')
+	event.shaped('steampowered:cast_iron_boiler', [
 		'BBB',
 		'BGB',
 		'BBB'
-	],{
+	], {
 		B: 'steampowered:cast_iron_sheet',
 		G: 'create:fluid_pipe'
 	})
-	.id('steampowered:cast_iron_boiler')
-	event.shaped('steampowered:steel_boiler',[
+		.id('steampowered:cast_iron_boiler')
+	event.shaped('steampowered:steel_boiler', [
 		'BBB',
 		'BGB',
 		'BBB'
-	],{
+	], {
 		B: '#forge:plates/steel',
 		G: 'create:fluid_pipe'
 	})
-	.id('steampowered:steel_boiler')
+		.id('steampowered:steel_boiler')
+	//液态灵魂
+	event.recipes.createMixing(
+		Fluid.of('tconstruct:liquid_soul', 100), [
+		'4x minecraft:weeping_vines',
+		'4x minecraft:twisting_vines',
+	]
+	).heated()
+	//熔岩构件
+	let Ilm = 'ctza:incomplete_lava_mechanism'
+	let Tls = 'tconstruct:liquid_soul'
+	let ML = 'minecraft:lava'
+	event.recipes.createSequencedAssembly([Item.of('ctza:lava_mechanism')],
+		'create:precision_mechanism',
+		[
+			event.recipes.createFilling(Ilm, [Ilm, Fluid.of(Tls, 250)]),
+			event.recipes.createFilling(Ilm, [Ilm, Fluid.of(ML, 1000)]),
+			event.recipes.createPressing(Ilm, Ilm),
+			event.recipes.createPressing(Ilm, Ilm)
+		]
+	).loops(1).transitionalItem(Ilm)
+
+	//动力构件
+	let Ikm = 'ctza:incomplete_kinetic_mechanism'
+	let Mws = '#minecraft:wooden_slabs'
+	let Caa = 'create:andesite_alloy'
+	let saw = 'ctza:saw'
+	event.recipes.createSequencedAssembly([Item.of('ctza:kinetic_mechanism')],
+		'#minecraft:wooden_slabs',
+		[
+			event.recipes.createDeploying(Ikm,[Ikm,saw]),
+			event.recipes.createDeploying(Ikm,[Ikm,Caa]),
+			event.recipes.createDeploying(Ikm,[Ikm,Caa])
+		]
+	).loops(1).transitionalItem(Ikm)
+	//钻石
 })
