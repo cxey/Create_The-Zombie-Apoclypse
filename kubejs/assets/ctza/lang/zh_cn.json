@@ -24,5 +24,6 @@
 	"item.ctza.incomplete_copper_mechanism": "铜构件(半成品)",
 	"item.ctza.andesit_sheet": "安山合金板",
 	"block.ctza.fortified_obsidian": "强化黑曜石",
-	"block.ctza.cast_iron_block": "铸铁块"
+	"block.ctza.cast_iron_block": "铸铁块",
+	"block.ctza.heat_coal_block": "加工煤炭块"
 }

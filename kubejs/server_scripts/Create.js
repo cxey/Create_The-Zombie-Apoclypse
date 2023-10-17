@@ -225,7 +225,8 @@ onEvent('recipes', event => {
 	let Ilm = 'ctza:incomplete_lava_mechanism'
 	let Tls = 'tconstruct:liquid_soul'
 	let ML = 'minecraft:lava'
-	event.recipes.createSequencedAssembly([Item.of('ctza:lava_mechanism')],
+	event.recipes.createSequencedAssembly([
+		Item.of('ctza:lava_mechanism')],
 		'create:precision_mechanism',
 		[
 			event.recipes.createFilling(Ilm, [Ilm, Fluid.of(Tls, 250)]),
@@ -240,13 +241,28 @@ onEvent('recipes', event => {
 	let Mws = '#minecraft:wooden_slabs'
 	let Caa = 'create:andesite_alloy'
 	let saw = 'ctza:saw'
-	event.recipes.createSequencedAssembly([Item.of('ctza:kinetic_mechanism')],
+	event.recipes.createSequencedAssembly([
+		Item.of('ctza:kinetic_mechanism')],
 		'#minecraft:wooden_slabs',
 		[
-			event.recipes.createDeploying(Ikm,[Ikm,saw]),
-			event.recipes.createDeploying(Ikm,[Ikm,Caa]),
-			event.recipes.createDeploying(Ikm,[Ikm,Caa])
+			event.recipes.createDeploying(Ikm, [Ikm, saw]),
+			event.recipes.createDeploying(Ikm, [Ikm, Caa]),
+			event.recipes.createDeploying(Ikm, [Ikm, Caa])
 		]
 	).loops(1).transitionalItem(Ikm)
-	//钻石
+
+	//钻石块
+	let hcb = 'ctza:heat_coal_block'
+	let cb = 'minecraft:coal_block'
+	let water = 'minecraft:water'
+	let blood = 'tconstruct:blazing_blood'
+	event.recipes.createSequencedAssembly([
+		Item.of('minecraft:diamond_block')],
+		'minecraft:coal_block',
+		[
+			event.recipes.createFilling(cb, [cb, Fluid.of(blood, 150)]),
+			event.recipes.createPressing(cb, cb),
+			event.recipes.createFilling(cb, [cb, Fluid.of(water, 250)]),
+			event.recipes.createPressing(cb, cb)
+		]).loops(15).transitionalItem(hcb)
 })

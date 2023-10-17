@@ -1,3 +1,0 @@
-// 钻石
-onEvent('recipes', event => { 
-	let inter = 'minecraft:coal_block'; event.recipes.create.sequenced_assembly([Item.of('minecraft:diamond'), Item.of('minecraft:sand').withChance(5.0)], inter, [event.recipes.createFilling(inter, [inter, Fluid.lava(1000)]), event.recipes.createPressing(inter, inter), event.recipes.createPressing(inter, inter), event.recipes.createPressing(inter, inter), event.recipes.createPressing(inter, inter), event.recipes.createFilling(inter, [inter, Fluid.water(500)]),]).transitionalItem(inter).loops(50000); })

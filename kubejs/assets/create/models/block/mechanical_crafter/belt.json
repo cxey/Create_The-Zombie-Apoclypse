@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"5": "create:block/brass_casing"
+		"0": "create:block/crafter_belt_side",
+		"particle": "create:block/crafter_belt_side"
 	},
 	"elements": [
 		{
@@ -10,8 +11,8 @@
 			"from": [-0.5, 12, 5],
 			"to": [0.5, 20, 6],
 			"faces": {
-				"north": {"uv": [2, 4, 3, 12], "rotation": 180, "texture": "#5"},
-				"west": {"uv": [2, 4, 3, 12], "texture": "#5"}
+				"north": {"uv": [2, 4, 3, 12], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [2, 4, 3, 12], "texture": "#0"}
 			}
 		},
 		{
@@ -19,8 +20,8 @@
 			"from": [-0.5, 12, 10],
 			"to": [0.5, 20, 11],
 			"faces": {
-				"south": {"uv": [2, 4, 3, 12], "texture": "#5"},
-				"west": {"uv": [13, 4, 14, 12], "texture": "#5"}
+				"south": {"uv": [2, 4, 3, 12], "texture": "#0"},
+				"west": {"uv": [13, 4, 14, 12], "texture": "#0"}
 			}
 		}
 	]

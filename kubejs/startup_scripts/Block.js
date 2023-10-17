@@ -19,3 +19,7 @@ onEvent('block.registry', event => {
 		.tagBlock('minecraft:needs_iron_tool')
 		.requiresTool(true)
 })
+//加工煤炭块
+onEvent('block.registry', event => {
+	event.create('ctza:heat_coal_block')
+})
