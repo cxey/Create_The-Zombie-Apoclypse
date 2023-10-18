@@ -9,6 +9,53 @@ onEvent('recipes', event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/soul/glass' })
 	event.remove({ id: 'tconstruct:smeltery/melting/soul/pane' })
 	event.remove({ id: 'tconstruct:smeltery/melting/soul/sand' })
+	
+	//机壳
+	//安山
+	event.shapeless(
+		'2x create:andesite_casing',
+		['create:andesite_alloy',
+			'#minecraft:logs']
+	).id('create:crafting/materials/andesite_casing')
+	event.recipes.create.mechanical_crafting('6x create:andesite_casing', [
+		' A ',
+		'ALA',
+		' A '
+	], {
+		A: 'create:andesite_alloy',
+		L: '#minecraft:logs',
+	}).id('create:crafting/materials/andesite_casing')
+
+	//铁
+	event.shapeless(
+		'2x create:copper_casing',
+		['#minecraft:logs',
+			'#forge:plates/iron']
+	).id('create:crafting/materials/copper_casing')
+	event.recipes.create.mechanical_crafting('6x create:copper_casing', [
+		' I ',
+		'ILI',
+		' I '
+	], {
+		I: '#forge:plates/iron',
+		L: '#minecraft:logs'
+	}).id('create:crafting/materials/copper_casing')
+	
+	//黄铜
+	event.shapeless(
+		'2x create:brass_casing',
+		['#minecraft:logs',
+			'#forge:plates/brass']
+	).id('create:crafting/materials/brass_casing')
+	event.recipes.create.mechanical_crafting('2x create:brass_casing', [
+		' B ',
+		'BLB',
+		' B '
+	], {
+		B: '#forge:plates/brass',
+		L: '#minecraft:logs'
+	}).id('create:crafting/materials/brass_casing')
+
 	//橡胶手部零件
 	event.shaped('create:brass_hand', [
 		' A ',

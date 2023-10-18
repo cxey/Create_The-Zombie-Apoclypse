@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "steampowered:steel_sheet",
-    "#forge:plates/steel"
-  ]
-}
