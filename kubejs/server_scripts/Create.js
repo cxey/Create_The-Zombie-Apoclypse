@@ -143,14 +143,13 @@ onEvent('recipes', event => {
 	event.recipes.create.mechanical_crafting('3x steampowered:bronze_burner', [
 		'BBBBB',
 		'BILIB',
-		'BLbLB',
+		'BLcLB',
 		'MILIM',
-		'MMcMM'
+		'MMMMM'
 	], {
 		B: '#forge:plates/bronze',
 		M: 'tconstruct:mud_bricks',
 		L: 'ctza:lava_mechanism',
-		b: '#forge:storage_blocks/bronze',
 		I: '#forge:ingots/bronze',
 		c: 'ctza:burner_core'
 	})
@@ -158,13 +157,12 @@ onEvent('recipes', event => {
 	event.recipes.create.mechanical_crafting('3x steampowered:cast_iron_burner', [
 		'CCCCC',
 		'CILIC',
-		'CLbLC',
+		'CLcLC',
 		'SILIS',
-		'SScSS'
+		'SSSSS'
 	], {
 		C: 'steampowered:cast_iron_sheet',
 		S: '#tconstruct:seared_blocks',
-		b: 'ctza:cast_iron_block',
 		L: 'ctza:lava_mechanism',
 		I: '#steampowered:ingots/cast_iron',
 		c: 'ctza:burner_core'
@@ -173,15 +171,14 @@ onEvent('recipes', event => {
 	event.recipes.create.mechanical_crafting('3x steampowered:steel_burner', [
 		'SSSSS',
 		'SILIS',
-		'SLbLS',
+		'SLcLS',
 		'SILIS',
-		'BBcBB'
+		'BBBBB'
 	], {
 		S: '#forge:plates/steel',
 		B: '#tconstruct:scorched_blocks',
 		L: 'ctza:lava_mechanism',
 		I: '#steampowered:ingots/steel',
-		b: '#forge:storage_blocks/steel',
 		c: 'ctza:burner_core'
 	})
 		.id('steampowered:steel_burner')
@@ -243,7 +240,7 @@ onEvent('recipes', event => {
 	let saw = 'ctza:saw'
 	event.recipes.createSequencedAssembly([
 		Item.of('ctza:kinetic_mechanism')],
-		'#minecraft:wooden_slabs',
+		Mws,
 		[
 			event.recipes.createDeploying(Ikm, [Ikm, saw]),
 			event.recipes.createDeploying(Ikm, [Ikm, Caa]),
@@ -258,11 +255,27 @@ onEvent('recipes', event => {
 	let blood = 'tconstruct:blazing_blood'
 	event.recipes.createSequencedAssembly([
 		Item.of('minecraft:diamond_block')],
-		'minecraft:coal_block',
+		cb,
 		[
 			event.recipes.createFilling(cb, [cb, Fluid.of(blood, 150)]),
 			event.recipes.createPressing(cb, cb),
 			event.recipes.createFilling(cb, [cb, Fluid.of(water, 250)]),
 			event.recipes.createPressing(cb, cb)
-		]).loops(15).transitionalItem(hcb)
+		]).loops(10).transitionalItem(hcb)
+
+	//弹壳
+	let lava = 'minecraft:lava'
+	let bs = 'create:brass_sheet'
+	let Lava = Fluid.of(lava, 50)
+	let sc = 'ctza:shell_cast'
+	let Water = Fluid.of(water, 50)
+	event.recipes.createSequencedAssembly([
+		Item.of('4x ctza:shell_case')],
+		bs,
+		[
+			event.recipes.createFilling(bs, [bs, Lava]),
+			event.recipes.createDeploying(bs, [bs, sc]),
+			event.recipes.createFilling(bs, [bs, Water])
+		]
+	).loops(1).transitionalItem(bs)
 })

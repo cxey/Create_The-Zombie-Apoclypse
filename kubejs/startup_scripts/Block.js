@@ -22,4 +22,5 @@ onEvent('block.registry', event => {
 //加工煤炭块
 onEvent('block.registry', event => {
 	event.create('ctza:heat_coal_block')
+		.material('stone')
 })

@@ -43,4 +43,18 @@ onEvent('recipes', event => {
 		"result": "ctza:fortified_obsidian",
 		"cooling_time": 200
 	})
+	//弹壳铸模
+	event.custom({
+		"type": "tconstruct:casting_table",
+		"cast": {
+			"item": "ctza:shell_case"
+		},
+		"cast_consumed": true,
+		"fluid": {
+			"tag": "tconstruct:molten_gold",
+			"amount": 144
+		},
+		"result": Item.of('ctza:shell_cast', '{Damage:0}'),
+		"cooling_time": 50
+	})
 })

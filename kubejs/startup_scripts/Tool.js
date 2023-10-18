@@ -8,4 +8,7 @@ onEvent('item.registry', event => {
 	//异彩共振器
 	event.create('ctza:chromatic_resonator')
 		.maxDamage('2048')
+	//弹壳模具
+	event.create('ctza:shell_cast')
+		.maxDamage('2048')
 })

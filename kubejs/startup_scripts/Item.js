@@ -32,16 +32,11 @@ onEvent('item.registry', event => {
 	//绝缘构件(半成品)
 	event.create('ctza:incomplete_insulation_mechanism')
 		.type('create:sequenced_assembly')
-	//安山构件
-	event.create('ctza:andesit_mechanism')
-	//安山构件(半成品)
-	event.create('ctza:incomplete_andesit_mechanism')
-		.type('create:sequenced_assembly')
-	//铜构件
-	event.create('ctza:copper_mechanism')
-	//铜构件(半成品)
-	event.create('ctza:incomplete_copper_mechanism')
-		.type('create:sequenced_assembly')
 	//安山合金板
 	event.create('ctza:andesit_sheet')
+	//末影构件
+	event.create('ctza:ender_mechanism')
+	//末影构件(半成品)
+	event.create('ctza:incomplete_ender_mechanism')
+		.type('create:sequenced_assembly')
 })
