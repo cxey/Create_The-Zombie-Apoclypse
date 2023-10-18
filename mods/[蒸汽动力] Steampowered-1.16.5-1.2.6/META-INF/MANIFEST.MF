@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: steampowered
+Specification-Vendor: TeamMoeg
+Specification-Version: 1
+Implementation-Title: steampowered
+Implementation-Version: 1.16.5-1.2.6
+Implementation-Vendor: TeamMoeg
+Implementation-Timestamp: 2022-10-24T01:05:48+0800
+MixinConfigs: steampowered.mixins.json
+

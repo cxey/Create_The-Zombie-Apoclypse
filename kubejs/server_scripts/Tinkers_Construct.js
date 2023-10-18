@@ -1,4 +1,5 @@
 onEvent('recipes', event => {
+	event.remove({ id: 'tconstruct:smeltery/casting/seared/smeltery_controller' })
 	//小齿轮(半成品)
 	event.custom({
 		"type": "tconstruct:casting_table",

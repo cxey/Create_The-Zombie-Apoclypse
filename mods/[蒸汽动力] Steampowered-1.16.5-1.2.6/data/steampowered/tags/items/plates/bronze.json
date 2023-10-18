@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "steampowered:bronze_sheet",
+    {
+      "id":"#forge:plates/bronze",
+      "required":false
+    }
+  ]
+}

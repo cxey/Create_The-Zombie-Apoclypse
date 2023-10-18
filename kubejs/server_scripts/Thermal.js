@@ -4,7 +4,7 @@ onEvent('recipes', event => {
 	event.remove({ id: 'thermal:devices/tree_extractor/tree_extractor_jungle' })
 
 	//树汁提取器
-	
+
 	//丛林
 	event.custom({
 		"type": "thermal:tree_extractor",
@@ -41,6 +41,43 @@ onEvent('recipes', event => {
 		"leaves": "minecraft:warped_wart_block",
 		"result": {
 			"fluid": "minecraft:lava",
+			"amount": 100
+		}
+	})
+	//粘液
+	event.custom({
+		"type": "thermal:tree_extractor",
+		"trunk": "tconstruct:skyroot_log",
+		"leaves": "tconstruct:sky_slime_leaves",
+		"result": {
+			"fluid": "tconstruct:sky_slime",
+			"amount": 100
+		}
+	})
+	event.custom({
+		"type": "thermal:tree_extractor",
+		"trunk": "tconstruct:greenheart_log",
+		"leaves": "tconstruct:earth_slime_leaves",
+		"result": {
+			"fluid": "tconstruct:earth_slime",
+			"amount": 100
+		}
+	})
+	event.custom({
+		"type": "thermal:tree_extractor",
+		"trunk": "tconstruct:skyroot_log",
+		"leaves": "tconstruct:ender_slime_leaves",
+		"result": {
+			"fluid": "tconstruct:ender_slime",
+			"amount": 100
+		}
+	})
+	event.custom({
+		"type": "thermal:tree_extractor",
+		"trunk": "tconstruct:bloodshroom_log",
+		"leaves": "tconstruct:blood_slime_leaves",
+		"result": {
+			"fluid": "tconstruct:magma",
 			"amount": 100
 		}
 	})

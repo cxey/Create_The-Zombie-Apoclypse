@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "com/teammoeg/steampowered/mixin/MixinFlywheel": {
+      "tick": "Lcom/simibubi/create/content/contraptions/components/flywheel/FlywheelTileEntity;func_73660_a()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "com/teammoeg/steampowered/mixin/MixinFlywheel": {
+        "tick": "Lcom/simibubi/create/content/contraptions/components/flywheel/FlywheelTileEntity;func_73660_a()V"
+      }
+    }
+  }
+}

@@ -211,6 +211,22 @@ onEvent('recipes', event => {
 		G: 'create:fluid_pipe'
 	})
 		.id('steampowered:steel_boiler')
+	//熔融黑曜石
+	event.recipes.createMixing(Fluid.of('tconstruct:molten_obsidian', 10), [
+		Fluid.of('minecraft:lava', 10),
+		Fluid.of('minecraft:water', 10),
+	]
+	)
+	//岩浆
+	//鹅卵石
+	event.recipes.createMixing(Fluid.of('minecraft:lava', 100), [
+		'64x #forge:cobblestone'
+	]).heated()
+		.id('create:mixing/lava_from_cobble')
+	//地狱岩
+	event.recipes.createCompacting(Fluid.of('minecraft:lava', 100), [
+		'16x #forge:netherrack'
+	]).superheated()
 	//液态灵魂
 	event.recipes.createMixing(
 		Fluid.of('tconstruct:liquid_soul', 100), [
