@@ -9,7 +9,7 @@ onEvent('recipes', event => {
 	event.remove({ id: 'tconstruct:smeltery/melting/soul/glass' })
 	event.remove({ id: 'tconstruct:smeltery/melting/soul/pane' })
 	event.remove({ id: 'tconstruct:smeltery/melting/soul/sand' })
-	
+
 	//机壳
 	//安山
 	event.shapeless(
@@ -40,7 +40,7 @@ onEvent('recipes', event => {
 		I: '#forge:plates/iron',
 		L: '#minecraft:logs'
 	}).id('create:crafting/materials/copper_casing')
-	
+
 	//黄铜
 	event.shapeless(
 		'2x create:brass_casing',
@@ -77,6 +77,17 @@ onEvent('recipes', event => {
 	})
 		.id('create:crafting/kinetics/belt_connector')
 
+	//粉碎轮
+	event.recipes.create.mechanical_crafting('create:crushing_wheel', [
+		' AAA ',
+		'AAPAA',
+		'APPPA',
+		'AAPAA',
+		' AAA '
+	], {
+		A: 'create:andesite_alloy',
+		P: '#minecraft:planks'
+	}).id('create:mechanical_crafting/crushing_wheel')
 	//水车
 	event.shaped('create:water_wheel', [
 		' P ',
