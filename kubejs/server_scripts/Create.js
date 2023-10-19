@@ -67,8 +67,35 @@ onEvent('recipes', event => {
 	})
 		.id('create:crafting/kinetics/brass_hand')
 
+	//黑奴笼子(空)
+	event.shaped('create:empty_blaze_burner', [
+		'I I',
+		'InI',
+		'iii'
+	], {
+		i: '#forge:plates/iron',
+		n: '#forge:netherrack',
+		I: 'minecraft:iron_bars'
+	}).id('create:crafting/kinetics/empty_blaze_burner')
+
+	//黑奴笼子(有)
+	event.shaped('create:blaze_burner', [
+		'IHI',
+		'InI',
+		'iii'
+	], {
+		i: '#forge:plates/iron',
+		n: '#forge:netherrack',
+		I: 'minecraft:iron_bars',
+		H: 'tconstruct:blaze_head'
+	})
+	event.shapeless(
+		'create:blaze_burner', [
+		'create:empty_blaze_burner',
+		'tconstruct:blaze_head'
+	])
 	//传送带
-	event.shaped('create:belt_connector', [
+	event.shaped('4x create:belt_connector', [
 		'CCC',
 		'CCC',
 		'   '
@@ -96,9 +123,16 @@ onEvent('recipes', event => {
 	], {
 		P: '#minecraft:planks',
 		A: 'create:shaft'
+	}).id('create:crafting/kinetics/water_wheel')
+	//动力合成
+	event.recipes.create.mechanical_crafting('2x create:water_wheel', [
+		' P ',
+		'PAP',
+		' P '
+	], {
+		P: '#minecraft:planks',
+		A: 'create:shaft'
 	})
-		.id('create:crafting/kinetics/water_wheel')
-
 	//机械手
 	event.shaped('create:deployer', [
 		' A ',
@@ -190,6 +224,7 @@ onEvent('recipes', event => {
 		S: 'create:shadow_steel',
 		R: 'ctza:radiant_sheet'
 	})
+
 	//光辉板x1
 	event.recipes.create.mechanical_crafting('ctza:radiant_coil',
 		[
@@ -197,6 +232,7 @@ onEvent('recipes', event => {
 		], {
 		R: 'ctza:radiant_sheet'
 	})
+
 	//燃烧室
 	event.recipes.create.mechanical_crafting('3x steampowered:bronze_burner', [
 		'BBBBB',
@@ -241,6 +277,12 @@ onEvent('recipes', event => {
 	})
 		.id('steampowered:steel_burner')
 
+	//钻石粉
+	event.recipes.createMilling([
+		Item.of('createaddition:diamond_grit')
+			.withChance(0.5)
+	], '#forge:gems/diamond')
+
 	//锅炉
 	event.shaped('steampowered:bronze_boiler', [
 		'BBB',
@@ -269,12 +311,13 @@ onEvent('recipes', event => {
 		G: 'create:fluid_pipe'
 	})
 		.id('steampowered:steel_boiler')
+
 	//熔融黑曜石
 	event.recipes.createMixing(Fluid.of('tconstruct:molten_obsidian', 10), [
 		Fluid.of('minecraft:lava', 10),
 		Fluid.of('minecraft:water', 10),
-	]
-	)
+	])
+
 	//岩浆
 	//鹅卵石
 	event.recipes.createMixing(Fluid.of('minecraft:lava', 100), [
@@ -285,6 +328,7 @@ onEvent('recipes', event => {
 	event.recipes.createCompacting(Fluid.of('minecraft:lava', 100), [
 		'16x #forge:netherrack'
 	]).superheated()
+
 	//液态灵魂
 	event.recipes.createMixing(
 		Fluid.of('tconstruct:liquid_soul', 100), [

@@ -58,4 +58,32 @@ onEvent('recipes', event => {
 		"result": Item.of('ctza:shell_cast', '{Damage:0}'),
 		"cooling_time": 50
 	})
+	//烈焰血
+	event.custom({
+		"type": "tconstruct:casting_table",
+		"cast": {
+			"item": "create:blaze_cake_base"
+		},
+		"cast_consumed": true,
+		"fluid": {
+			"tag": "tconstruct:blazing_blood",
+			"amount": 500
+		},
+		"result": "create:blaze_cake",
+		"cooling_time": 1
+	})
+	//烈焰人的头
+	event.custom({
+		"type": "tconstruct:casting_basin",
+		"cast": {
+			"item": "create:blaze_cake"
+		},
+		"cast_consumed": true,
+		"fluid": {
+			"tag": "tconstruct:blazing_blood",
+			"amount": 400
+		},
+		"result": "tconstruct:blaze_head",
+		"cooling_time": 1
+	})
 })

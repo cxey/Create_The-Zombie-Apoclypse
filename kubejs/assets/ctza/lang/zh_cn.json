@@ -24,5 +24,6 @@
 	"item.ctza.shell_cast": "弹壳铸模",
 	"block.ctza.fortified_obsidian": "强化黑曜石",
 	"block.ctza.cast_iron_block": "铸铁块",
-	"block.ctza.heat_coal_block": "加工煤炭块"
+	"block.ctza.heat_coal_block": "加工煤炭块",
+	"block.ctza.diamond_obsidian": "钻石黑曜石"
 }

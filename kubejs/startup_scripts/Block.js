@@ -24,3 +24,8 @@ onEvent('block.registry', event => {
 	event.create('ctza:heat_coal_block')
 		.material('stone')
 })
+//钻石黑曜石
+onEvent('block.registry', event => {
+	event.create('ctza:diamond_obsidian')
+		.material('stone')
+})

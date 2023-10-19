@@ -25,4 +25,9 @@ onEvent('recipes', event => {
 	event.shapeless('9x steampowered:cast_iron_ingot', [
 		'ctza:cast_iron_block'
 	])
+	//钻石黑曜石
+	event.recipes.createMixing('ctza:diamond_obsidian', [
+		'4x #forge:dusts/diamond',
+		'#forge:obsidian'
+	]).heated()
 })
