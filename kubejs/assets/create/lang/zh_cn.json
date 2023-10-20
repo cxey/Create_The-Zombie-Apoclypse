@@ -630,7 +630,7 @@
 	"advancement.create.chained_item_drain.desc": "观察物品穿过多个链状分布的分液池。",
 	"advancement.create.glass_pipe": "流之观察者",
 	"advancement.create.glass_pipe.desc": "透过带窗的流体管道观察流体在管道中流淌。使用扳手可打开直线流体管道的窗户。",
-	"advancement.create.pipe_collision": "Never cross the Streams!",
+	"advancement.create.pipe_collision": "永远不要混用!",
 	"advancement.create.pipe_collision.desc": "观察两种流体在管道网络中相会。",
 	"advancement.create.pipe_spill": "漏水啦!",
 	"advancement.create.pipe_spill.desc": "观察管道的开口端将流体排放或放置到世界中。",
