@@ -124,15 +124,6 @@ onEvent('recipes', event => {
 		P: '#minecraft:planks',
 		A: 'create:shaft'
 	}).id('create:crafting/kinetics/water_wheel')
-	//动力合成
-	event.recipes.create.mechanical_crafting('2x create:water_wheel', [
-		' P ',
-		'PAP',
-		' P '
-	], {
-		P: '#minecraft:planks',
-		A: 'create:shaft'
-	})
 	//机械手
 	event.shaped('create:deployer', [
 		' A ',
