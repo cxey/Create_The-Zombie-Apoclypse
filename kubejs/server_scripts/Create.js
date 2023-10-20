@@ -270,7 +270,7 @@ onEvent('recipes', event => {
 
 	//钻石粉
 	event.recipes.createMilling([
-		Item.of('createaddition:diamond_grit')
+		Item.of('thermal:diamond_dust')
 			.withChance(0.5)
 	], '#forge:gems/diamond')
 

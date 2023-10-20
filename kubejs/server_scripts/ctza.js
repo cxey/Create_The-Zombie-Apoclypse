@@ -28,6 +28,7 @@ onEvent('recipes', event => {
 	//钻石黑曜石
 	event.recipes.createMixing('ctza:diamond_obsidian', [
 		'4x #forge:dusts/diamond',
-		'#forge:obsidian'
+		'#forge:obsidian',
+		'#forge:dusts/redstone'
 	]).heated()
 })
