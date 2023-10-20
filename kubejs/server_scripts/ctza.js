@@ -31,4 +31,9 @@ onEvent('recipes', event => {
 		'#forge:obsidian',
 		'#forge:dusts/redstone'
 	]).heated()
+	//磨制
+	event.recipes.createSandpaperPolishing('ctza:polished_apatite',
+		'#forge:gems/apatite')
+	event.recipes.createSandpaperPolishing('ctza:polished_cinnabar',
+		'#forge:gems/cinnabar')
 })
