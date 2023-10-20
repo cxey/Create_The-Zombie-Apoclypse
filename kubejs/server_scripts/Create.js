@@ -1,22 +1,64 @@
 onEvent('recipes', event => {
 	//移除id
-	event.remove({ id: 'create:crafting/kinetics/cogwheel' })
-	event.remove({ id: 'create:sequenced_assembly/large_cogwheel' })
-	event.remove({ id: 'create:sequenced_assembly/cogwheel' })
-	event.remove({ id: 'create:crafting/kinetics/large_cogwheel' })
-	event.remove({ id: 'create:mechanical_crafting/flywheel' })
-	event.remove({ id: 'create:mechanical_crafting/furnace_engine' })
-	event.remove({ id: 'tconstruct:smeltery/melting/soul/glass' })
-	event.remove({ id: 'tconstruct:smeltery/melting/soul/pane' })
-	event.remove({ id: 'tconstruct:smeltery/melting/soul/sand' })
+	{
+		let removeid = ['create:crafting/kinetics/cogwheel',
+						'create:sequenced_assembly/large_cogwheel',
+						'create:sequenced_assembly/cogwheel',
+						'create:crafting/kinetics/large_cogwheel',
+						'create:mechanical_crafting/flywheel',
+						'create:mechanical_crafting/furnace_engine',
+						'tconstruct:smeltery/melting/soul/glass',
+						'tconstruct:smeltery/melting/soul/pane',
+						'tconstruct:smeltery/melting/soul/sand']
+		for (let i of removeid) {
+			event.remove({id:`${i}`})
+			}
+		
+	}
 
 	//机壳
 	//安山
-	event.shapeless(
-		'2x create:andesite_casing',
-		['create:andesite_alloy',
-			'#minecraft:logs']
-	).id('create:crafting/materials/andesite_casing')
+
+	{
+		let shapelessrecipes = {
+			'recipes':[
+				{
+					'output':'2x create:andesite_casing',
+					'input':['create:andesite_alloy',
+					'#minecraft:logs'],
+					'id':'create:crafting/materials/andesite_casing'
+				},
+				{//铁
+					'output':'2x create:copper_casing',
+					'input':['#minecraft:logs',
+					'#forge:plates/iron'],
+					'id':'create:crafting/materials/copper_casing'
+				},
+				{//黄铜
+					'output':'2x create:brass_casing',
+					'input':['#minecraft:logs',
+					'#forge:plates/brass'],
+					'id':'create:crafting/materials/brass_casing'
+				},
+				{
+					'output':'create:blaze_burner',
+					'input': [
+						'create:empty_blaze_burner',
+						'tconstruct:blaze_head'
+					],
+					'id':'createe:crafting/blaze_burner'
+				},
+			]
+		}
+
+		for (let i = 0; i < shapelessrecipes.recipes.length; i++) {
+			event.shapeless(shapelessrecipes.recipes[i].output,
+							shapelessrecipes.recipes[i].input,
+							).id(shapelessrecipes.recipes[i].id)			
+		}
+	}
+
+
 	event.recipes.create.mechanical_crafting('6x create:andesite_casing', [
 		' A ',
 		'ALA',
@@ -27,11 +69,7 @@ onEvent('recipes', event => {
 	}).id('create:crafting/materials/andesite_casing')
 
 	//铁
-	event.shapeless(
-		'2x create:copper_casing',
-		['#minecraft:logs',
-			'#forge:plates/iron']
-	).id('create:crafting/materials/copper_casing')
+	
 	event.recipes.create.mechanical_crafting('6x create:copper_casing', [
 		' I ',
 		'ILI',
@@ -42,11 +80,6 @@ onEvent('recipes', event => {
 	}).id('create:crafting/materials/copper_casing')
 
 	//黄铜
-	event.shapeless(
-		'2x create:brass_casing',
-		['#minecraft:logs',
-			'#forge:plates/brass']
-	).id('create:crafting/materials/brass_casing')
 	event.recipes.create.mechanical_crafting('2x create:brass_casing', [
 		' B ',
 		'BLB',
@@ -89,11 +122,7 @@ onEvent('recipes', event => {
 		I: 'minecraft:iron_bars',
 		H: 'tconstruct:blaze_head'
 	})
-	event.shapeless(
-		'create:blaze_burner', [
-		'create:empty_blaze_burner',
-		'tconstruct:blaze_head'
-	])
+
 	//传送带
 	event.shaped('4x create:belt_connector', [
 		'CCC',
