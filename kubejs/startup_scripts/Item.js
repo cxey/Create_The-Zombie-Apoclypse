@@ -39,4 +39,10 @@ onEvent('item.registry', event => {
 	//末影构件(半成品)
 	event.create('ctza:incomplete_ender_mechanism')
 		.type('create:sequenced_assembly')
+	//青金石板
+	event.create('ctza:lapis_sheet')
+	//集成电路板
+	event.create('ctza:integrated_circuit')
+	//金脚针
+	event.create('ctza:golden_pin')
 })

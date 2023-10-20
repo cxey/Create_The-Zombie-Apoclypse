@@ -309,6 +309,11 @@ onEvent('recipes', event => {
 		Fluid.of('minecraft:water', 10),
 	])
 
+	//青金石板
+	event.recipes.createPressing('ctza:lapis_sheet', [
+		'#forge:storage_blocks/lapis'
+	])
+
 	//岩浆
 	//鹅卵石
 	event.recipes.createMixing(Fluid.of('minecraft:lava', 100), [
