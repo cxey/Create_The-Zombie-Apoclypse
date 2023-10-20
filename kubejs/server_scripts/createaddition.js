@@ -2,11 +2,11 @@ onEvent('recipes', event => {
 	event.custom({
 		"type": "createaddition:rolling",
 		"input": {
-			"tag": "#forge:ingots/gold"
+			"tag": "forge:ingots/gold"
 		},
 		"result": {
 			"item": "ctza:golden_pin",
-			"count": 2
+			"count": 4
 		}
 	})
 })
