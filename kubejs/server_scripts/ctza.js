@@ -12,8 +12,8 @@ onEvent('recipes', event => {
 	//锯子
 	event.shaped(Item.of('ctza:saw', '{Damage:0}'), [
 		'  I',
-		' I ',
-		'T  '
+		'TI ',
+		'TT '
 	], {
 		I: '#forge:ingots/iron',
 		T: '#forge:rods/wooden'
