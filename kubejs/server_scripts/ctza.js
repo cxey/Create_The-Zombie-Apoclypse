@@ -12,8 +12,8 @@ onEvent('recipes', event => {
 	//锯子
 	event.shaped(Item.of('ctza:saw', '{Damage:0}'), [
 		'  I',
-		' I ',
-		'T  '
+		'TI ',
+		'TT '
 	], {
 		I: '#forge:ingots/iron',
 		T: '#forge:rods/wooden'
@@ -28,6 +28,12 @@ onEvent('recipes', event => {
 	//钻石黑曜石
 	event.recipes.createMixing('ctza:diamond_obsidian', [
 		'4x #forge:dusts/diamond',
-		'#forge:obsidian'
+		'#forge:obsidian',
+		'#forge:dusts/redstone'
 	]).heated()
+	//磨制
+	event.recipes.createSandpaperPolishing('ctza:polished_apatite',
+		'#forge:gems/apatite')
+	event.recipes.createSandpaperPolishing('ctza:polished_cinnabar',
+		'#forge:gems/cinnabar')
 })
